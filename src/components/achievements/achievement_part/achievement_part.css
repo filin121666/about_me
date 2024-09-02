@@ -1,0 +1,63 @@
+.achievement {
+    --achievement-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid rgba(128, 128, 128, 0.5) 2px;
+    border-radius: 20px;
+    height: var(--achievement-height);
+    margin: 2.5vh 3vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.achievement-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--achievement-height) * 0.4);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.achievement-title-h1 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.achievement-line {
+    height: 0;
+    width: 100%;
+    border: solid rgba(128, 128, 128, 0.5) 1px;
+    margin: 1vh 0;
+}
+
+.achievement-body {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: calc(var(--achievement-height) * 0.6);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.achievement-body-p {
+    overflow: auto;
+    max-height: 100%;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 0.5vh 2vw;
+}
+
+@media (max-width: 600px) {
+    .achievement-title-h1 {
+        font-size: 1.2rem;
+    }
+}

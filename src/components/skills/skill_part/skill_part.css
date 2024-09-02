@@ -1,0 +1,99 @@
+.skill {
+    --height-skill: 10vh;
+    display: flex;
+    align-items: center;
+    border: solid rgba(128, 128, 128, 0.5) 2px;
+    border-radius: 20px;
+    margin: 2.5vh 3vw;
+    height: var(--height-skill);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: var(--height-skill);
+}
+
+.skill-icon-link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-h2-link-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-h2-link {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.skill-icon-img {
+    max-height: 80%;
+    max-width: 100%;
+}
+
+.skill-part-line {
+    width: 0;
+    border: solid rgba(128, 128, 128, 0.5) 1px;
+    height: 100%;
+    margin: 0 1vw 0 0;
+}
+
+.skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-content-text {
+    overflow: auto;
+    max-height: 100%;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 0.5vh 0.5vw;
+}
+
+@media (max-width: 800px) {
+    .skill {
+        --height-skill: 25vh;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill {
+        flex-direction: column;
+        height: calc(var(--height-skill) * 2.5);
+    }
+
+    .skill-icon {
+        height: var(--height-skill);
+    }
+
+    .skill-part-line {
+        height: 0;
+        width: 100%;
+        margin: 0 0 1vh 0;
+    }
+
+    .skill-content {
+        height: calc(var(--height-skill) * 1.5);
+        overflow: hidden;
+    }
+}
