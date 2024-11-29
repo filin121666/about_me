@@ -3,67 +3,19 @@
     background-color: #74F394;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
-.profile-container {
+.profile-block {
     flex: 0 0 auto;
 }
 
-.navigation-container {
-    position: absolute;
-    left: 55%;
-    transform: translateX(-50%);
+.timer-block {
+    margin-right: 20px;
+}
+
+.right-block {
     display: flex;
     align-items: center;
-    height: 100%;
-}
-
-.timer-container {
-    position: absolute;
-    left: 90%;
-}
-
-@media (max-width: 800px) {
-    .navigation-container {
-        position: absolute;
-        left: 95%;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    .timer-container {
-        position: absolute;
-        left: 77%;
-    }
-}
-
-@media (max-width: 500px) {
-    .navigation-container {
-        position: absolute;
-        left: 90%;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    .timer-container {
-        display: none;
-    }
-}
-
-
-@media (max-width: 300px) {
-    .navigation-container {
-        position: absolute;
-        left: 85%;
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
-
-    .timer-container {
-        display: none;
-    }
 }

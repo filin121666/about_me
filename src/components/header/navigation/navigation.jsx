@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react";
 
 function Navigation({ page, setPage }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const menuRef = useRef(null); // Создаем реф для меню
-    const buttonRef = useRef(null); // Создаем реф для кнопки меню
+    const menuRef = useRef(null);
+    const buttonRef = useRef(null);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -46,6 +46,12 @@ function Navigation({ page, setPage }) {
                     onClick={() => setPage("achievements")}
                 >
                     Достижения
+                </NavLinkButton>
+                <NavLinkButton
+                    isActive={page === "projects"}
+                    onClick={() => setPage("projects")}
+                >
+                    Проекты
                 </NavLinkButton>
             </div>
         </div>

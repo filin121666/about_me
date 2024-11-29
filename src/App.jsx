@@ -3,6 +3,7 @@ import Home from "./components/home/home.jsx";
 import { useState } from "react";
 import Skills from "./components/skills/skills.jsx";
 import Achievements from "./components/achievements/achievements.jsx";
+import Projects from "./components/projects/projects.jsx";
 
 function App() {
     const [page, setPage] = useState("home");
@@ -13,6 +14,7 @@ function App() {
             {page === "home" && <Home />}
             {page === "skills" && <Skills />}
             {page === "achievements" && <Achievements />}
+            {page === "projects" && <Projects />}
         </>
     );
 }

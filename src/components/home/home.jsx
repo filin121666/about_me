@@ -1,7 +1,32 @@
 import "./home.css";
 import Head from "../head/head.jsx";
+import { useState } from "react";
+import { useEffect } from "react";
+
+
+
+const photos = [
+    "/my_photo1.jpg",
+    "/my_photo2.jpg"
+]
+
 
 function Home() {
+    const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+    const [fade, setFade] = useState(false);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setFade(true);
+            setTimeout(() => {
+                setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
+                setFade(false);
+            }, 500);
+        }, 3500);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
     return (
         <section className="home">
             <Head>Обо мне</Head>
@@ -22,9 +47,9 @@ function Home() {
                 </div>
                 <div className="home-content-photo">
                     <img
-                        src="/my_photo.jpg"
+                        src={photos[currentPhotoIndex]}
                         alt="my photo"
-                        className="home-content-photo-img"
+                        className={`home-content-photo-img ${fade ? 'fade-out' : 'fade-in'}`}
                     />
                 </div>
             </div>

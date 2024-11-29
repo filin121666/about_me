@@ -1,0 +1,84 @@
+.project {
+    --project-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid rgba(128, 128, 128, 0.5) 2px;
+    border-radius: 20px;
+    height: var(--project-height);
+    margin: 2.5vh 3vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--project-height) * 0.4);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-title-h1 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    overflow: auto;
+    max-height: 100%;
+}
+
+.project-line {
+    height: 0;
+    width: 100%;
+    border: solid rgba(128, 128, 128, 0.5) 1px;
+    margin: 1vh 0;
+}
+
+.project-line-before-links {
+    height: 0;
+    width: 100%;
+    border: solid rgba(128, 128, 128, 0.5) 1px;
+    margin-top: 1vh;
+}
+
+.project-body {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: calc(var(--project-height) * 0.6);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-body-p {
+    overflow: auto;
+    max-height: 100%;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 0.5vh 2vw;
+}
+
+.project-link {
+    width: 100%;
+    text-align: center;
+}
+
+.project-link-a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 2vh 2vw;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .project-title-h1 {
+        font-size: 1.2rem;
+    }
+}
