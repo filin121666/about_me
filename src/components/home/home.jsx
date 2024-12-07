@@ -40,7 +40,7 @@ function Home() {
                         />
                     </div>
                     <p className="home-content-text roboto-regular">
-                        Я, Шанин Кирилл Сергеевич, Backend разработчик из
+                        Я, Шанин Кирилл Сергеевич, разработчик из
                         России. Занимаюсь Backend-разработкой на Python. Изучаю
                         Python, C/C++, Arduino C и Computer Science.
                     </p>
