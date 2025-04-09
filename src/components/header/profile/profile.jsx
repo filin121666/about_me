@@ -6,6 +6,7 @@ function Profile() {
             <a
                 href="https://github.com/filin121666"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="github-link"
             >
                 <img

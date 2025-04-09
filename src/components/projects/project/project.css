@@ -1,12 +1,12 @@
 .project {
-    --project-height: 25vh;
+    /* --project-height: 25vh; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border: solid rgba(128, 128, 128, 0.5) 2px;
     border-radius: 20px;
-    height: var(--project-height);
+    /* min-height: var(--project-height); */
     margin: 2.5vh 3vw;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(var(--project-height) * 0.4);
+    /* min-height: calc(var(--project-height) * 0.4); */
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -29,6 +29,7 @@
     white-space: nowrap;
     overflow: auto;
     max-height: 100%;
+    margin: 2vh 2vw;
 }
 
 .project-line {
@@ -49,7 +50,7 @@
     display: flex;
     align-items: start;
     justify-content: start;
-    height: calc(var(--project-height) * 0.6);
+    /* min-height: calc(var(--project-height) * 0.6); */
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -60,7 +61,7 @@
     max-height: 100%;
     text-overflow: ellipsis;
     width: 100%;
-    margin: 0.5vh 2vw;
+    margin: 1vh 2vw;
 }
 
 .project-link {

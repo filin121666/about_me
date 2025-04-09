@@ -16,7 +16,7 @@ function Project({ title, link, children }) {
             </div>
             <div className="project-line-before-links" />
             <div className="project-link">
-                <a href={link} target="_blank" className="project-link-a roboto-regular">Ссылка на проект</a>
+                <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-a roboto-regular">Ссылка на проект</a>
             </div>
         </div>
     );

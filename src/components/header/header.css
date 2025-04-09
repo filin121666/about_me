@@ -4,7 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top: 0; /* Устанавливает заголовок в верхней части страницы */
+    left: 0; /* Устанавливает заголовок в левом краю страницы */
+    right: 0; /* Устанавливает заголовок в правом краю страницы */
+    z-index: 1000; /* Устанавливает уровень наложения, чтобы заголовок был выше других элементов */
 }
 
 .profile-block {

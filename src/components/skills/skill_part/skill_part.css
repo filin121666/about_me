@@ -1,11 +1,11 @@
 .skill {
     --height-skill: 10vh;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     border: solid rgba(128, 128, 128, 0.5) 2px;
     border-radius: 20px;
     margin: 2.5vh 3vw;
-    height: var(--height-skill);
+    min-height: var(--height-skill);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto 1vw;
     height: 100%;
     width: var(--height-skill);
 }
@@ -48,13 +49,13 @@
 .skill-part-line {
     width: 0;
     border: solid rgba(128, 128, 128, 0.5) 1px;
-    height: 100%;
+    min-height: var(--height-skill);
+    height: auto;
     margin: 0 1vw 0 0;
 }
 
 .skill-content {
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -64,10 +65,10 @@
 
 .skill-content-text {
     overflow: auto;
-    max-height: 100%;
+    /* max-height: 100%; */
     text-overflow: ellipsis;
     width: 100%;
-    margin: 0.5vh 0.5vw;
+    margin: 2vh 1vw;
 }
 
 @media (max-width: 800px) {
@@ -79,21 +80,32 @@
 @media (max-width: 400px) {
     .skill {
         flex-direction: column;
-        height: calc(var(--height-skill) * 2.5);
+        min-height: calc(var(--height-skill) * 2.5);
+        align-items: center;
     }
 
     .skill-icon {
-        height: var(--height-skill);
+        min-height: var(--height-skill);
+        margin: 2vh auto;
+    }
+
+    .skill-icon-link {
+        padding: 0 auto;
     }
 
     .skill-part-line {
         height: 0;
+        min-height: 0;
         width: 100%;
         margin: 0 0 1vh 0;
     }
 
     .skill-content {
-        height: calc(var(--height-skill) * 1.5);
+        /* min-height: calc(var(--height-skill) * 1.5); */
         overflow: hidden;
+    }
+
+    .skill-content-text {
+        margin: 2vh 3vw;
     }
 }

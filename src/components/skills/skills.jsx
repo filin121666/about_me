@@ -5,7 +5,7 @@ import SkillPart from "./skill_part/skill_part.jsx";
 function Skills() {
     return (
         <section className="skills">
-            <Head>Мои навыки, технологии и прочее</Head>
+            <Head>Мои навыки, инструменты и прочее</Head>
             <HeadL2>Языки программирования</HeadL2>
             <SkillPart
                 img={"/skills/python-logo.svg"}
@@ -57,33 +57,18 @@ function Skills() {
                 img={"/skills/css-logo.svg"}
                 url={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
             >
-                CSS (3). Знаю базовые стили для текстовых и блочных
-                элементов, медиа запросы.
+                CSS (3). Знаю базовые стили для текстовых и блочных элементов,
+                медиа запросы.
             </SkillPart>
-            <HeadL2>WEB framework-и (и библиотеки)</HeadL2>
+            <HeadL2>WEB frameworks (и библиотеки)</HeadL2>
             <SkillPart
                 img={"/skills/fastapi-logo.svg"}
                 url={"https://fastapi.tiangolo.com"}
             >
-                FastAPI. Знаю базовые концепции + использую для валидаци данных
+                FastAPI. Знаю базовые концепции и пишу backend приложений на нём
+                (в том числе и асинхронный) + использую для валидаци данных
                 Pydantic, в качестве ORM - SQLAlchemy. Я хорошо знаю этот
                 framework.
-            </SkillPart>
-            <SkillPart
-                img={"/skills/django-logo.svg"}
-                url={"https://docs.djangoproject.com/en/5.1/"}
-            >
-                Django (5). Знаю базовые концепции + FBV (function-based views),
-                CBV (class-based views), django-orm, django-templates, работу с
-                сигналами. Использую в своих проектах без отдельного frontend-а.
-            </SkillPart>
-            <SkillPart
-                title={"DRF"}
-                url={"https://www.django-rest-framework.org"}
-            >
-                DRF (Django Rest Framework). Знаю на том же уровне что и django.
-                Использую в качестве отдельного backend-а, но больше предпочитаю
-                FastAPI (за его скорость и гибкость).
             </SkillPart>
             <SkillPart img={"/skills/react-logo.svg"} url={"https://react.dev"}>
                 React. Знаю базовые концепции, умею пользоваться базовым State и
@@ -95,15 +80,16 @@ function Skills() {
                 url={"https://www.sqlalchemy.org"}
             >
                 SQLAlchemy (2). Я умею работать с таблицами (моделями) и
-                записями. Я использую эту ORM для своего backend-а на FastAPI.
+                записями, в том числе и в асинхронном виде. Я использую эту ORM
+                для своего backend-а на FastAPI.
             </SkillPart>
             <HeadL2>Валидация данных</HeadL2>
             <SkillPart
                 img={"/skills/pydantic-logo.svg"}
                 url={"https://docs.pydantic.dev/latest/"}
             >
-                Pydantic. Умею валидировать данные, в том числе попадающие на
-                backend, также умею создавать кастомные валидаторы для полей.
+                Pydantic. Умею валидировать данные также умею создавать
+                кастомные валидаторы для полей.
             </SkillPart>
             <HeadL2>Базы данных</HeadL2>
             <SkillPart
@@ -166,13 +152,14 @@ function Skills() {
                 img={"/skills/docker-logo.svg"}
                 url={"https://www.docker.com"}
             >
-                Docker. Запускаю некоторые проекты через него.
+                Docker. Запускаю некоторые проекты с его помощью.
             </SkillPart>
             <SkillPart
                 img={"/skills/docker-compose-logo.webp"}
                 url={"https://docs.docker.com/compose/"}
             >
-                Docker-compose. Умею создавать системы из нескольких docker контейнеров.
+                Docker-compose. Умею создавать системы из нескольких docker
+                контейнеров.
             </SkillPart>
             <HeadL2>Компиляторы C/C++</HeadL2>
             <SkillPart
@@ -206,7 +193,7 @@ function Skills() {
                 img={"/skills/arduino-logo.svg"}
                 url={"https://www.arduino.cc"}
             >
-                Arduino. Знаю базово Arduino C.
+                Arduino. Знаю базово Arduino C. Имел опыт программировать Arduino Nano, Arduino Uno.
             </SkillPart>
             <SkillPart
                 img={"/skills/platformio-logo.svg"}

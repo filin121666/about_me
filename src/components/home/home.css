@@ -20,7 +20,7 @@
     border: solid rgba(0, 0, 0, 0.25) 2px;
     border-radius: 25px;
     height: auto;
-    max-width: 50vw;
+    max-width: 30vw;
     width: auto;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
     flex-direction: column;
@@ -28,8 +28,9 @@
 }
 
 .home-content-text {
-    text-align: center;
+    text-align: justify;
     overflow: auto;
+    margin: 0 2vw 1vh 2vw;
 }
 
 .home-content-photo {

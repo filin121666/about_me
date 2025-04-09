@@ -1,4 +1,4 @@
-.achievement {
+.achievement-multipart {
     --achievement-height: 25vh;
     display: flex;
     align-items: left;
@@ -37,7 +37,7 @@
     margin: 1vh 0;
 }
 
-.achievement-body {
+.achievement-item {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -47,7 +47,7 @@
     position: relative;
 }
 
-.achievement-body-p {
+.achievement-item-p {
     text-align: left;
     overflow: auto;
     max-height: 100%;

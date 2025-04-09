@@ -10,6 +10,7 @@ function SkillPart({ img, url, title, children }) {
                             href={url}
                             className="skill-icon-link"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <img
                                 src={img}
@@ -32,7 +33,7 @@ function SkillPart({ img, url, title, children }) {
                 )}
                 {!img && title && (
                     <>
-                        <a href={url} target="_blank" className="skill-h2-link">
+                        <a href={url} target="_blank" rel="noopener noreferrer" className="skill-h2-link">
                             <div className="skill-h2-link-container">
                                 <h2 className="skill-h2-link-text roboto-medium">{title}</h2>
                             </div>

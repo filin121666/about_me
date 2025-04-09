@@ -3,13 +3,7 @@ import Head from "../head/head.jsx";
 import { useState } from "react";
 import { useEffect } from "react";
 
-
-
-const photos = [
-    "/my_photo1.jpg",
-    "/my_photo2.jpg"
-]
-
+const photos = ["/my_photo1.jpg", "/my_photo2.jpg"];
 
 function Home() {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
@@ -19,7 +13,9 @@ function Home() {
         const intervalId = setInterval(() => {
             setFade(true);
             setTimeout(() => {
-                setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
+                setCurrentPhotoIndex(
+                    (prevIndex) => (prevIndex + 1) % photos.length
+                );
                 setFade(false);
             }, 500);
         }, 3500);
@@ -40,16 +36,19 @@ function Home() {
                         />
                     </div>
                     <p className="home-content-text roboto-regular">
-                        Я, Шанин Кирилл Сергеевич, разработчик из
+                        Я, Шанин Кирилл Сергеевич, начинающий разработчик из
                         России. Занимаюсь Backend-разработкой на Python. Изучаю
-                        Python, C/C++, Arduino C и Computer Science.
+                        Python, C/C++, Arduino C и Computer Science. Помимо
+                        программирования также увлекаюсь математикой и физикой.
                     </p>
                 </div>
                 <div className="home-content-photo">
                     <img
                         src={photos[currentPhotoIndex]}
                         alt="my photo"
-                        className={`home-content-photo-img ${fade ? 'fade-out' : 'fade-in'}`}
+                        className={`home-content-photo-img ${
+                            fade ? "fade-out" : "fade-in"
+                        }`}
                     />
                 </div>
             </div>
