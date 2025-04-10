@@ -193,7 +193,7 @@ function Skills() {
                 img={"/skills/arduino-logo.svg"}
                 url={"https://www.arduino.cc"}
             >
-                Arduino. Знаю базово Arduino C. Имел опыт программировать Arduino Nano, Arduino Uno.
+                Arduino. Знаю базово Arduino C. Умею программировать Arduino Nano, Arduino Uno.
             </SkillPart>
             <SkillPart
                 img={"/skills/platformio-logo.svg"}
@@ -205,7 +205,7 @@ function Skills() {
                 img={"/skills/esp32-logo.svg"}
                 url={"https://www.espressif.com/en/"}
             >
-                Esp. Имел опыт программировать esp32 и esp8266.
+                Esp. Умею программировать esp32 и esp8266.
             </SkillPart>
         </section>
     );
