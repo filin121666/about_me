@@ -4,8 +4,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 // const photos = ["/my_photo1.jpg", "/my_photo2.jpg"];
-const photos = ["/about_me/my_photo1.jpg", "/about_me/my_photo2.jpg"];
-
+// const photos = ["/about_me/my_photo1.jpg", "/about_me/my_photo2.jpg"];
+const photos = [
+    "https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo1.jpg",
+    "https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo2.jpg",
+];
 
 function Home() {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
