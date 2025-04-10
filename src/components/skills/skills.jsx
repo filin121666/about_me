@@ -116,7 +116,7 @@ function Skills() {
             <SkillPart
                 img={"/about_me/skills/mongodb-logo.svg"}
                 // img={"/skills/mongodb-logo.svg"}
-                url={"https://www.mongodb.com"}
+                url={"https://ru.wikipedia.org/wiki/MongoDB"}
             >
                 MongoDB. Использую в качестве нереляционной базы данных.
             </SkillPart>

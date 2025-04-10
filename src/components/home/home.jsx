@@ -22,7 +22,7 @@ function Home() {
                     (prevIndex) => (prevIndex + 1) % photos.length
                 );
                 setFade(false);
-            }, 500);
+            }, 600);
         }, 4500);
 
         return () => clearInterval(intervalId);
