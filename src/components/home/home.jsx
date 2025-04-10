@@ -3,7 +3,9 @@ import Head from "../head/head.jsx";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const photos = ["/my_photo1.jpg", "/my_photo2.jpg"];
+// const photos = ["/my_photo1.jpg", "/my_photo2.jpg"];
+const photos = ["/about_me/my_photo1.jpg", "/about_me/my_photo2.jpg"];
+
 
 function Home() {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
@@ -30,7 +32,8 @@ function Home() {
                 <div className="home-content-description">
                     <div className="home-content-text-img">
                         <img
-                            src="/greeting.webp"
+                            // src="/greeting.webp"
+                            src="/about_me/greeting.webp"
                             alt="greeting"
                             className="home-content-text-greeting"
                         />

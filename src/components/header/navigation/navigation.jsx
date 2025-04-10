@@ -26,7 +26,8 @@ function Navigation({ page, setPage }) {
     return (
         <div className="navigation-container">
             <button className="menu-button" onClick={toggleMenu} ref={buttonRef}>
-                <img src="/menu-button.svg" alt="menu" className="menu-button-icon"/>
+                {/* <img src="/menu-button.svg" alt="menu" className="menu-button-icon"/> */}
+                <img src="/about_me/menu-button.svg" alt="menu" className="menu-button-icon"/>
             </button>
             <div className={`navigation ${isMenuOpen ? 'open' : ''}`} ref={menuRef}>
                 <NavLinkButton
