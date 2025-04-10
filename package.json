@@ -1,7 +1,7 @@
 {
   "name": "about_me",
   "private": true,
-  "homepage": "https://filin121666.github.io/about_me",
+  "homepage": ".",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
