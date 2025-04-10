@@ -13,7 +13,6 @@ const photos = [
 function Home() {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
     const [fade, setFade] = useState(false);
-    const intervalRef = useRef(null);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -24,9 +23,9 @@ function Home() {
                 );
                 setFade(false);
             }, 500);
-        }, 3500);
+        }, 4500);
 
-        return () => clearInterval(intervalRef.current);
+        return () => clearInterval(intervalId);
     }, []);
 
     return (
