@@ -21,7 +21,13 @@ function Achievements() {
                 title="Sololearn"
                 childrens={achievementsJson.sololearn}
             />
-            <AchievementPart achievement={achievementsJson.physics_with_Pigalitsyn} />
+            <AchievementMultiPart
+                title="Урок цифры"
+                childrens={achievementsJson.lesson_of_digits}
+            />
+            <AchievementPart
+                achievement={achievementsJson.physics_with_Pigalitsyn}
+            />
             <AchievementPart achievement={achievementsJson.path_to_it} />
             <AchievementPart achievement={achievementsJson.hackathon_maxitet} />
         </section>

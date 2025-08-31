@@ -100,6 +100,10 @@
             "https://edu.sirius.online/certificate_5dAVk8Qr"
         ],
         [
+            "Курс \"Введение в программирование на языке C++ (v1.5)\". Подтверждено сертификатом.",
+            "https://edu.sirius.online/certificate_bXZmg7jY"
+        ],
+        [
             "Курс \"Дополнительные главы алгебры. 7 класс (v1.8)\". Подтверждено сертификатом.",
             "https://edu.sirius.online/certificate_BdpBlo7j"
         ],
@@ -112,10 +116,6 @@
             "https://edu.sirius.online/certificate_4j7D1WXz"
         ],
         [
-            "Курс \"Введение в программирование на языке C++ (v1.5)\". Подтверждено сертификатом.",
-            "https://edu.sirius.online/certificate_bXZmg7jY"
-        ],
-        [
             "Курс \"Дополнительные главы физики: статика. 7 класс (v1.4)\". Подтверждено сертификатом.",
             "https://edu.sirius.online/certificate_VdxPW8dq"
         ]
@@ -124,5 +124,27 @@
         "title": "Физика с Пигалицыным",
         "body": "В течение года принимал участие в вебинарах для школьников Донбасса с народным учителем РФ Львом Васильевичем Пигалицыным. Подтверждено сертификатом.",
         "url": "https://github.com/filin121666/certificates/blob/main/physics_with_Pigalitsyn/physics_with_Pigalitsyn.pdf"
-    }
+    },
+    "lesson_of_digits": [
+        [
+            "Урок по тему \"Технологии современного программирования\". Подтверждено сертификатом.",
+            "https://github.com/filin121666/certificates/blob/main/lesson_of_digits/modern_programming_technologies.pdf"
+        ],
+        [
+            "Урок по теме \"Магазин приложений\". Подтверждено сертификатом.",
+            "https://github.com/filin121666/certificates/blob/main/lesson_of_digits/app_store.pdf"
+        ],
+        [
+            "Урок по теме \"Секреты операционных систем\". Подтверждено сертификатом.",
+            "https://github.com/filin121666/certificates/blob/main/lesson_of_digits/secrets_of_operating_systems.pdf"
+        ],
+        [
+            "Урок по теме \"Квантовые вычисления и материалы будущего\". Подтверждено сертификатом.",
+            "https://github.com/filin121666/certificates/blob/main/lesson_of_digits/quantum_computing_and_materials_of_the_future.pdf"
+        ],
+        [
+            "Урок по теме \"Искусственный интеллект: промпт-инжиниринг\". Подтверждено сертификатом.",
+            "https://github.com/filin121666/certificates/blob/main/lesson_of_digits/artificial_intelligence__prompt_engineering.pdf"
+        ]
+    ]
 }
