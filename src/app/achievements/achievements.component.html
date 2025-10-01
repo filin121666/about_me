@@ -1,0 +1,33 @@
+<main class="achievements-page">
+    <app-page-title>Достижения</app-page-title>
+    
+    @for (achievement of achievements; track achievement.id) {
+        @if (isGroup(achievement)) {
+            <!-- Отображение группового достижения -->
+            <section class="group-achievement">
+                <section-title [attr.id]="achievement.id">{{ achievement.name }}</section-title>
+                <div class="achievements-grid">
+                    @for (item of getGroupAchievements(achievement); track item.title) {
+                        <div class="achievement-item">
+                            <h4 class="achievement-title">{{ item.title }}</h4>
+                            <a [href]="item.url" target="_blank" class="achievement-link">
+                                Посмотреть сертификат
+                            </a>
+                        </div>
+                    }
+                </div>
+            </section>
+        } @else if (isSingle(achievement)) {
+            <!-- Отображение одиночного достижения -->
+            <section class="single-achievement">
+                <div class="achievement-card">
+                    <h3 class="achievement-card-title">{{ achievement.name }}</h3>
+                    <p class="achievement-card-body">{{ getSingleBody(achievement) }}</p>
+                    <a [href]="getSingleUrl(achievement)" target="_blank" class="achievement-card-link">
+                        Посмотреть сертификат
+                    </a>
+                </div>
+            </section>
+        }
+    }
+</main>

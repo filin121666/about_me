@@ -1,0 +1,18 @@
+@use "../../mixins.scss" as *;
+@use "../../shared/variables.scss" as v;
+
+.section-title {
+    &-h2 {
+        text-align: center;
+        font-size: 1.75rem;
+
+        @media screen and (max-width: v.$media-very-small-screen) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &-hr {
+        @include hr-style;
+        background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    }
+}

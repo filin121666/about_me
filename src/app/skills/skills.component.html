@@ -1,0 +1,16 @@
+<main class="skills-page">
+    <app-page-title>Навыки и инструменты</app-page-title>
+        @for (section of skills; track section.id) {
+            <section-title [attr.id]="section.id">{{ section.name }}</section-title>
+            <section class="skills-page-body">
+            @for (skill of section.skills; track skill.id) {
+                <skill 
+                    [imgSrc]="skill.imgSrc || ''" 
+                    [url]="skill.url"
+                    [name]="skill.name">
+                    {{ skill.description }}
+                </skill>
+            }
+            </section>
+        }
+</main>

@@ -1,0 +1,24 @@
+$title-border-bottom-radius: 20px;
+
+@mixin page {
+    padding: 8vh 0;
+}
+
+@mixin page-title {
+    display: inline-block;
+    border: 2px solid #80808080;
+    border-top: none;
+    padding: 0.8rem 1rem;
+    border-bottom-left-radius: $title-border-bottom-radius;
+    border-bottom-right-radius: $title-border-bottom-radius;
+    text-align: center;
+}
+
+@mixin hr-style {
+    border: none;
+    height: 2px;
+    width: 100%;
+    background-color: #80808080;
+    border-radius: 5px;
+    margin: 1vh 0;
+}

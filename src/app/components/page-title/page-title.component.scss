@@ -1,0 +1,16 @@
+@use '../../_mixins' as *;
+@use '../../shared/variables' as v;
+
+.page-title {
+    @include page-title;
+    margin-bottom: 2vh;
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media screen and (max-width: v.$media-very-small-screen) {
+        font-size: 1.7rem;
+    }
+}

@@ -1,0 +1,23 @@
+.header {
+    height: var(--header-height);
+    background-image: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+// #0cdba0, #00aae0
+// #2334E8 - #5AE8BB
+// #AE3C42 - #FB985D
+// #1588E0 - #61B070
+// #FC1B30 - #BC1F81
+// #50D4C9 - #4243BD
+// #D72C15 - #F94086
+// #7DE9BE - #741BCE
+// #CCFDAA - #E41123
+// #34B096 - #9CCD58

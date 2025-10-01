@@ -1,0 +1,34 @@
+<main class="home-page">
+    <app-page-title>Главная</app-page-title>
+    <div class="home-page-body">
+        <section class="home-page-body-content">
+            <picture class="home-page-body-content-greeting">
+                <source srcset="/greeting.webp" type="image/webp">
+                <img src="/greeting.gif" alt="greeting">
+            </picture>
+            <hr class="home-page-hr">
+            <p class="home-page-body-content-text roboto-regular">
+                Я, Шанин Кирилл Сергеевич, начинающий разработчик из
+                России. Окончил 9 класс с красным аттестатом, сейчас продолжаю учиться в школе. 
+                Занимаюсь Backend-разработкой на Python. Изучаю
+                Python, C/C++ и Computer Science. Помимо
+                программирования также увлекаюсь математикой и физикой.
+            </p>
+        </section>
+        <section class="home-page-body-photo" (mouseenter)="onMouseEnter($event)" (mouseleave)="onMouseLeave($event)">
+            <div class="home-page-body-photo-slider" #slider (click)="onPhotoClick()">
+                <div class="home-page-body-photo-slider-slides" #slides>
+                    @for (photo of photos; track photo.alt) {
+                        <div class="home-page-body-photo-slider-slides-slide">
+                            <picture class="home-page-body-photo-image">
+                                <source [srcset]="photo.avif" type="image/avif">
+                                <source [srcset]="photo.webp" type="image/webp">
+                                <img [src]="photo.jpg" [alt]="photo.alt">
+                            </picture>
+                        </div>
+                    }
+                </div>
+            </div>
+        </section>
+    </div>
+</main>

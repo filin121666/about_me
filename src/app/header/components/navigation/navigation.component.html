@@ -1,0 +1,21 @@
+<nav class="navigation">
+    <button class="menu-button" (click)="toggleMenu()" aria-label="Open navigation">
+        <img src="/menu-button.svg" alt="menu" />
+    </button>
+
+    @if (isOpen) {
+    <div class="backdrop" (click)="closeMenu()"></div>
+    <ul class="menu-list">
+        <li>
+            <app-nav-link path="/home" (navigated)="closeMenu()">Главная</app-nav-link>
+        </li>
+        <li>
+            <app-nav-link path="/skills" (navigated)="closeMenu()">Навыки</app-nav-link>
+        </li>
+        <li>
+            <app-nav-link path="/achievements" (navigated)="closeMenu()">Достижения</app-nav-link>
+        </li>
+    </ul>
+    }
+
+</nav>
