@@ -1,0 +1,81 @@
+<main class="projects-page">
+  <app-page-title>Проекты</app-page-title>
+
+  <div class="projects-container">
+    <!-- Filters Section -->
+    <section class="filters-section">
+      <div class="filters-container">
+        <!-- Category Filter -->
+        <div class="filter-group">
+          <label for="category-filter">Категория:</label>
+          <select
+            id="category-filter"
+            [(ngModel)]="selectedCategory"
+            (change)="onCategoryChange(selectedCategory)"
+            class="filter-select"
+          >
+            <option value="all">Все проекты</option>
+            @for (category of categories; track category) {
+            <option [value]="category">
+              {{ getCategoryLabel(category) }}
+            </option>
+            }
+          </select>
+        </div>
+
+        <!-- Search Filter -->
+        <div class="filter-group">
+          <label for="search-filter">Поиск:</label>
+          <input
+            id="search-filter"
+            type="text"
+            [(ngModel)]="searchQuery"
+            (input)="onSearchChange(searchQuery)"
+            placeholder="Поиск по названию, описанию или технологиям..."
+            class="search-input"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+      <div class="projects-header">
+        <h2 class="section-title">
+          {{ selectedCategory === 'all' ? 'Все проекты' : getCategoryLabel(selectedCategory) }}
+          <span class="projects-count">({{ filteredProjects.length }})</span>
+        </h2>
+      </div>
+
+      @if (filteredProjects.length > 0) {
+      <div class="projects-grid">
+        @for (project of filteredProjects; track project) {
+        <app-project [project]="project"></app-project>
+        }
+      </div>
+      }
+
+      <!-- No Results -->
+      @if (filteredProjects.length === 0) {
+      <div class="no-results">
+        <div class="no-results-content">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+            />
+          </svg>
+          <h3>Проекты не найдены</h3>
+          <p>Попробуйте изменить критерии поиска или выбрать другую категорию.</p>
+          <button
+            class="reset-filters-btn"
+            (click)="onCategoryChange('all'); searchQuery = ''; onSearchChange('')"
+          >
+            Сбросить фильтры
+          </button>
+        </div>
+      </div>
+      }
+    </section>
+  </div>
+</main>
+

@@ -1,0 +1,57 @@
+<div class="project-card">
+  <div class="project-header">
+    @if (project.imageUrl) {
+    <div class="project-image">
+      <img [src]="project.imageUrl" [alt]="project.title" loading="lazy" />
+    </div>
+    } @else {
+    <div class="project-image">
+      <img src="/github.svg" [alt]="project.title" loading="lazy" />
+    </div>
+    }
+    <div class="project-info">
+      <h3 class="project-title">{{ project.title }}</h3>
+      <span class="project-category">{{ getCategoryLabel(project.category) }}</span>
+    </div>
+  </div>
+
+  <div class="project-content">
+    <p class="project-description">{{ project.shortDescription }}</p>
+
+    <div class="project-technologies">
+      @for (tech of project.technologies; track tech) {
+      <span class="technology-tag">{{ tech }}</span>
+      }
+    </div>
+  </div>
+
+  <div class="project-footer">
+    <div class="project-links">
+      @if (project.githubUrl) {
+      <a
+        [href]="project.githubUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link github-link"
+      >
+        <img src="/github.svg" alt="GitHub" width="20" height="20" />
+        GitHub
+      </a>
+      } @if (project.liveUrl) {
+      <a
+        [href]="project.liveUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link live-link"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+          />
+        </svg>
+        Live Demo
+      </a>
+      }
+    </div>
+  </div>
+</div>

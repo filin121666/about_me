@@ -11,6 +11,7 @@ export class PageTitleService {
     'home': 'Главная',
     'skills': 'Навыки', 
     'achievements': 'Достижения',
+    'projects': 'Проекты',
     'not-found': '404 - Страница не найдена'
   };
 

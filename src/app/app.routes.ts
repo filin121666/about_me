@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 export const routes: Routes = [
     {
@@ -19,6 +20,11 @@ export const routes: Routes = [
         path: 'achievements',
         component: AchievementsComponent,
         data: { title: 'Достижения - About Me' }
+    },
+    {
+        path: 'projects',
+        component: ProjectsComponent,
+        data: { title: 'Проекты - About Me' }
     },
     {
         path: '',
