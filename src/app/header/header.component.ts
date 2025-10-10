@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ProfileComponent } from './components/profile/profile.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
+import { RightFunctionalComponent } from "./components/right-functional/right-functional.component";
 
 @Component({
     standalone: true,
-    imports: [ProfileComponent, NavigationComponent],
+    imports: [ProfileComponent, RightFunctionalComponent],
     selector: 'app-header',
     templateUrl: 'header.component.html',
     styleUrl: 'header.component.scss',

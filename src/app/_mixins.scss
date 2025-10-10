@@ -2,11 +2,14 @@ $title-border-bottom-radius: 20px;
 
 @mixin page {
     padding: 8vh 0;
+    color: var(--text-primary);
+    background-color: var(--background-color);
+    min-height: 100vh;
 }
 
 @mixin page-title {
     display: inline-block;
-    border: 2px solid #80808080;
+    border: 2px solid var(--hr-color);
     border-top: none;
     padding: 0.8rem 1rem;
     border-bottom-left-radius: $title-border-bottom-radius;
@@ -18,7 +21,7 @@ $title-border-bottom-radius: 20px;
     border: none;
     height: 2px;
     width: 100%;
-    background-color: #80808080;
+    background-color: var(--hr-color);
     border-radius: 5px;
     margin: 1vh 0;
 }

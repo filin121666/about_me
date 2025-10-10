@@ -1,0 +1,7 @@
+<button class="switcher-theme" (click)="onSwitcherThemeClick()">
+    @if (colorThemeService.isDarkMode) {
+        <img src="/dark-theme.svg" alt="" class="switcher-theme-image">
+    } @else {
+        <img src="/light-theme.svg" alt="" class="switcher-theme-image">
+    }
+</button>

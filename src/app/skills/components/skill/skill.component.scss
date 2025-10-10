@@ -22,16 +22,22 @@
         height: 10vh;
         width: auto;
         margin: 1vh 0;
+        
+        &-dark-mode {
+            background-color: var(--logo-background);
+            border-radius: 16px;
+        }
     }
 
     &-link {
         text-decoration: none;
-        color: black;
+        color: var(--text-primary);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
         width: 100%;
+        background-color: var(--logo-link-background);
 
         &-h2 {
             margin: 2vh 0;

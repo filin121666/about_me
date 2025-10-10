@@ -5,10 +5,10 @@
     flex: 0 0 auto;
     align-items: center;
     margin: 1vh 0 1vh 5vw;
-    background-color: white;
+    background-color: var(--background-color);
     border-radius: calc((var(--header-height) - 2vh) / 2);
     text-decoration: none;
-    color: black;
+    color: var(--text-primary);
 
     @media screen and (max-height: v.$media-very-small-screen) {
         background-color: none;

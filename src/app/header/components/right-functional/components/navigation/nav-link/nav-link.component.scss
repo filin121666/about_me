@@ -1,4 +1,4 @@
-@use "../../../../shared/_variables" as v;
+@use "../../../../../../shared/variables" as v;
 
 .nav-link-button {
     display: flex;
@@ -15,6 +15,10 @@
     color: inherit;
     text-decoration: none;
     transition: background 0.2s ease;
+
+    &-text {
+        color: var(--text-primary);
+    }
 
     &:focus {
         outline: none;

@@ -4,6 +4,7 @@ export interface Skill {
   description?: string;
   imgSrc?: string;
   url: string;
+  darkModeBackground?: boolean;
 }
 
 export interface SkillsSection {

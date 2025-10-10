@@ -76,6 +76,12 @@ export class SkillsService {
           url: 'https://www.postman.com/',
         },
         {
+          id: 'black',
+          name: 'Black',
+          description: 'Умею форматировать код в соответствии с PEP 8.',
+          url: 'https://black.readthedocs.io/en/stable/index.html',
+        },
+        {
           id: 'gcc',
           name: 'GCC',
           imgSrc: '/skills/gcc-logo.svg',
@@ -84,7 +90,8 @@ export class SkillsService {
         {
           id: 'make',
           name: 'Make',
-          description: 'Умею писать Makefile, который соберёт файлы проекта в исполняемый файл, либо отдельную библиотеку.',
+          description:
+            'Умею писать Makefile, который соберёт файлы проекта в исполняемый файл, либо отдельную библиотеку.',
           url: 'https://www.gnu.org/software/make/',
         },
       ],
@@ -123,6 +130,7 @@ export class SkillsService {
           description: 'Умею управлять зависимостями и замораживать их.',
           imgSrc: '/skills/pip-logo.svg',
           url: 'https://pypi.org/project/pip/',
+          darkModeBackground: true,
         },
         {
           id: 'poetry',
@@ -144,6 +152,7 @@ export class SkillsService {
             'Я умею подключаться к базе данных, отправлять туда запросы. Умею делать атомарные запросы ии выполнять поиск в базе данных.',
           imgSrc: '/skills/sqlalchemy-logo.svg',
           url: 'https://www.sqlalchemy.org/',
+          darkModeBackground: true,
         },
         {
           id: 'redis',
@@ -178,7 +187,8 @@ export class SkillsService {
         {
           id: 'scss',
           name: 'SCSS',
-          description: 'Умею писать стили с вложенностями и наследовательностью, знаю как работают mixins и как подключать стили из отдельных файлов.',
+          description:
+            'Умею писать стили с вложенностями и наследовательностью, знаю как работают mixins и как подключать стили из отдельных файлов.',
           imgSrc: '/skills/scss-logo.svg',
           url: 'https://sass-lang.com/',
         },
@@ -197,6 +207,14 @@ export class SkillsService {
             'Умею типизировать переменные, функции, объекты, использовать литеральные типы, кастовать типы. Знаю разницу между type и interface. Знаю некоторые утилитарные типы (Partial, Required, Readonly, Pick, Omit, ReturnType).',
           imgSrc: '/skills/typescript-logo.svg',
           url: 'https://www.typescriptlang.org/',
+        },
+        {
+          id: 'angular',
+          name: 'Angular',
+          description:
+            'Умею создавать компоненты, сервисы, модули. Знаю как работает маршрутизация (роутинг). Умею получать данные с сервера при помощи HttpClient.',
+          imgSrc: '/skills/angular-logo.svg',
+          url: 'https://angular.dev/',
         },
       ],
     },
@@ -227,14 +245,16 @@ export class SkillsService {
         {
           id: 'c',
           name: 'C',
-          description: 'Знаю базовый синтаксис (переменные, условия, циклы, функции), типы данных, массивы, указатели, ссылки, структуры (struct), перечисления (enum), объединения (unions), битовые поля. Умею работать с аллокатором памяти.',
+          description:
+            'Знаю базовый синтаксис (переменные, условия, циклы, функции), типы данных, массивы, указатели, ссылки, структуры (struct), перечисления (enum), объединения (unions), битовые поля. Умею работать с аллокатором памяти.',
           imgSrc: '/skills/c-logo.svg',
           url: 'https://www.c-language.org/',
         },
         {
           id: 'cpp',
           name: 'C++',
-          description: 'Знаю базовый синтаксис (переменные, условия, циклы, функции), типы данных, структуры (struct), перечисления (enum), объединения (unions), битовые поля, ООП (с шаблонами). Частично знаю STL (стандартную библиотеку шаблонов). Умею работать с аллокатором памяти.\n\nЕсли ссылка в логотипе не работает (сайт может блокировать определённые подключения) и необходимости в использовании официального сайта нет, можете посмотреть сторонние ресурсы о С++.',
+          description:
+            'Знаю базовый синтаксис (переменные, условия, циклы, функции), типы данных, структуры (struct), перечисления (enum), объединения (unions), битовые поля, ООП (с шаблонами). Частично знаю STL (стандартную библиотеку шаблонов). Умею работать с аллокатором памяти.\n\nЕсли ссылка в логотипе не работает (сайт может блокировать определённые подключения) и необходимости в использовании официального сайта нет, можете посмотреть сторонние ресурсы о С++.',
           imgSrc: '/skills/cpp-logo.svg',
           url: 'https://isocpp.org/',
         },

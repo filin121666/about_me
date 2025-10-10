@@ -1,13 +1,45 @@
 :root {
+    --header-height: 8vh;
+    --secondary-color: #8b5cf6;
+}
+
+.light-theme {
     --primary-color: #3b82f6;
     --primary-hover: #2563eb;
     --primary-color-rgb: 59, 130, 246;
     --secondary-color: #8b5cf6;
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
-    --card-background: #ffffff;
     --border-color: #e5e7eb;
-    --header-height: 8vh;
+    --background-color: #ffffff;
+    --hr-color: #80808080;
+    --logo-link-background: inherit;
+    --logo-background: inherit;
+    --achievement-button-background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+.dark-theme {
+    --primary-color: #fc1b30;
+    --primary-color-rgb: 252, 27, 48;
+    --primary-hover: #e41123;
+    --background-color: #000000;
+    --text-primary: #ebebeb;
+    --text-secondary: #9ca3af;
+    --hr-color: #e5e7eb80;
+    --border-color: #e5e7eb80;
+    --logo-background: #ebebeb;
+    --logo-link-background: #444;
+    --achievement-button-background-color: rgba(var(--primary-color-rgb), 0.18);
+
+    // #2334E8 - #5AE8BB
+    // #AE3C42 - #FB985D
+    // #1588E0 - #61B070
+    // #FC1B30 - #BC1F81
+    // #50D4C9 - #4243BD
+    // #D72C15 - #F94086
+    // #7DE9BE - #741BCE
+    // #CCFDAA - #E41123
+    // #34B096 - #9CCD58
 }
 
 * {

@@ -15,4 +15,6 @@ export class SkillComponent {
     url: string = '';
     @Input({ required: true })
     name: string = '';
+    @Input()
+    darkModeBackground?: boolean = false;
 }

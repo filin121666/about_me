@@ -1,7 +1,11 @@
 <article class="skill">
     <a [href]="url" target="_blank" rel="noopener noreferrer" class="skill-link">
         @if (imgSrc) {
-            <img [src]="imgSrc" alt="Skill logo" class="skill-img"/>
+            @if (darkModeBackground) {
+                <img [src]="imgSrc" alt="Skill logo" class="skill-img skill-img-dark-mode"/>
+            } @else {
+                <img [src]="imgSrc" alt="Skill logo" class="skill-img"/>
+            }
         } @else {
             <h2 class="skill-link-h2 roboto-medium">{{ name }}</h2>
         }
