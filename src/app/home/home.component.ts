@@ -20,15 +20,15 @@ export class HomeComponent implements OnInit, OnDestroy {
 
     photos = [
         {
-            avif: '/my_photo1/my_photo1.avif',
-            webp: '/my_photo1/my_photo1.webp',
-            jpg: '/my_photo1/my_photo1.jpg',
+            avif: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo1/my_photo1.avif',
+            webp: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo1/my_photo1.webp',
+            jpg: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo1/my_photo1.jpg',
             alt: 'my photo 1',
         },
         {
-            avif: '/my_photo2/my_photo2.avif',
-            webp: '/my_photo2/my_photo2.webp',
-            jpg: '/my_photo2/my_photo2.jpg',
+            avif: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo2/my_photo2.avif',
+            webp: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo2/my_photo2.webp',
+            jpg: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/my_photo2/my_photo2.jpg',
             alt: 'my photo 2',
         }
     ];

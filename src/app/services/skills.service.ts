@@ -13,38 +13,38 @@ export class SkillsService {
         {
           id: 'vs_code',
           name: 'VS Code',
-          imgSrc: '/skills/vs-code-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/vs-code-logo.svg',
           url: 'https://code.visualstudio.com/',
         },
         {
           id: 'cursor_ide',
           name: 'Cursor IDE',
-          imgSrc: '/skills/cursor-ide-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/cursor-ide-logo.svg',
           url: 'https://cursor.com/features',
         },
         {
           id: 'platformio',
           name: 'PlatformIO',
-          imgSrc: '/skills/platformio-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/platformio-logo.svg',
           url: 'https://platformio.org/',
         },
         {
           id: 'arduino_ide',
           name: 'Arduino IDE',
-          imgSrc: '/skills/arduino-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/arduino-logo.svg',
           url: 'https://www.arduino.cc/en/software/#ide',
         },
         {
           id: 'github',
           name: 'Github',
-          imgSrc: '/skills/github-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/github-logo.svg',
           url: 'https://github.com/',
         },
         {
           id: 'git',
           name: 'Git',
           description: 'Умею создавать и управлять ветками и коммитами.',
-          imgSrc: '/skills/git-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/git-logo.svg',
           url: 'https://git-scm.com/',
         },
         {
@@ -52,7 +52,7 @@ export class SkillsService {
           name: 'Docker',
           description:
             'Умею создавать и управлять контейнерами (и их образами), умею писать Dockerfile для приложения.',
-          imgSrc: '/skills/docker-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/docker-logo.svg',
           url: 'https://www.docker.com/',
         },
         {
@@ -60,19 +60,19 @@ export class SkillsService {
           name: 'Docker Compose',
           description:
             'Умею писать docker-compose.yml, настраивать связь и порты между контейнерами.',
-          imgSrc: '/skills/docker-compose-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/docker-compose-logo.svg',
           url: 'https://docs.docker.com/compose/',
         },
         {
           id: 'dbeaver',
           name: 'DBeaver',
-          imgSrc: '/skills/dbeaver-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/dbeaver-logo.svg',
           url: 'https://dbeaver.io/',
         },
         {
           id: 'postman',
           name: 'Postman',
-          imgSrc: '/skills/postman-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/postman-logo.svg',
           url: 'https://www.postman.com/',
         },
         {
@@ -84,7 +84,7 @@ export class SkillsService {
         {
           id: 'gcc',
           name: 'GCC',
-          imgSrc: '/skills/gcc-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/gcc-logo.svg',
           url: 'https://gcc.gnu.org/',
         },
         {
@@ -105,7 +105,7 @@ export class SkillsService {
           name: 'Python 3',
           description:
             'Я знаю базовый синтаксис (переменные, условия, циклы, функции, простые типы данных), сложные типы данных (list, tuple, set, dict), рекурсию, базовый ООП, умею создавать, вызывать (raise) и обрабатывать (try, except, else, finally) исключения, типизировать переменные и функции, работать с асинхронностью.',
-          imgSrc: '/skills/python-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/python-logo.svg',
           url: 'https://www.python.org/',
         },
         {
@@ -113,7 +113,7 @@ export class SkillsService {
           name: 'FastAPI',
           description:
             'Умею создавать асинхронное приложение, настраивать кастомный сериализатор json и сжатие ответа с сервера, создавать эндпоинты на разные типы запросов.\n\nЕсли ссылка в логотипе не работает (сайт может блокировать определённые подключения) и необходимости в использовании официального сайта нет, можете посмотреть сторонние ресурсы о FastAPI.',
-          imgSrc: '/skills/fastapi-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/fastapi-logo.svg',
           url: 'https://fastapi.tiangolo.com/',
         },
         {
@@ -121,14 +121,14 @@ export class SkillsService {
           name: 'Pydantic',
           description:
             'Умею создавать классы типов, со встроенными и кастомными валидаторами. Также умею создавать класс с настройками при помощи pydantic_settings.',
-          imgSrc: '/skills/pydantic-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/pydantic-logo.svg',
           url: 'https://docs.pydantic.dev/latest/',
         },
         {
           id: 'pip',
           name: 'Pip',
           description: 'Умею управлять зависимостями и замораживать их.',
-          imgSrc: '/skills/pip-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/pip-logo.svg',
           url: 'https://pypi.org/project/pip/',
           darkModeBackground: true,
         },
@@ -136,13 +136,13 @@ export class SkillsService {
           id: 'poetry',
           name: 'Poetry',
           description: 'Умею настраивать проект и его зависимости.',
-          imgSrc: '/skills/poetry-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/poetry-logo.svg',
           url: 'https://python-poetry.org/',
         },
         {
           id: 'postgres',
           name: 'Postgres',
-          imgSrc: '/skills/postgresql-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/postgresql-logo.svg',
           url: 'https://www.postgresql.org/',
         },
         {
@@ -150,7 +150,7 @@ export class SkillsService {
           name: 'SQLAlchemy',
           description:
             'Я умею подключаться к базе данных, отправлять туда запросы. Умею делать атомарные запросы ии выполнять поиск в базе данных.',
-          imgSrc: '/skills/sqlalchemy-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/sqlalchemy-logo.svg',
           url: 'https://www.sqlalchemy.org/',
           darkModeBackground: true,
         },
@@ -159,7 +159,7 @@ export class SkillsService {
           name: 'Redis',
           description:
             'Умею сохранять, получать и сохранять данные в базе данных. Использую для кеширования данных.\n\nЕсли ссылка в логотипе не работает (сайт может блокировать определённые подключения) и необходимости в использовании официального сайта нет, можете посмотреть сторонние ресурсы о Redis.',
-          imgSrc: '/skills/redis-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/redis-logo.svg',
           url: 'https://redis.io/',
         },
       ],
@@ -173,7 +173,7 @@ export class SkillsService {
           name: 'HTML 5',
           description:
             'Знаю отличия между строчными и блочными элементами. Знаю большое количество HTML элементов и их атрибуты.',
-          imgSrc: '/skills/html-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/html-logo.svg',
           url: 'https://developer.mozilla.org/ru/docs/Web/HTML',
         },
         {
@@ -181,7 +181,7 @@ export class SkillsService {
           name: 'CSS 3',
           description:
             'Умею стилизировать строчные и блочные элементы, работать с flex и grid, делать медиа-запросы, настраивать шрифты.',
-          imgSrc: '/skills/css-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/css-logo.svg',
           url: 'https://developer.mozilla.org/ru/docs/Web/CSS',
         },
         {
@@ -189,7 +189,7 @@ export class SkillsService {
           name: 'SCSS',
           description:
             'Умею писать стили с вложенностями и наследовательностью, знаю как работают mixins и как подключать стили из отдельных файлов.',
-          imgSrc: '/skills/scss-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/scss-logo.svg',
           url: 'https://sass-lang.com/',
         },
         {
@@ -197,7 +197,7 @@ export class SkillsService {
           name: 'JavaScript',
           description:
             'Знаю базовый синтаксис (переменные, условия, циклы, функции, стрелочные функции, простые типы данных), сложные типы данных (Array, Object), как работать с асинхронностью.',
-          imgSrc: '/skills/javascript-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/javascript-logo.svg',
           url: 'https://developer.mozilla.org/ru/docs/Web/JavaScript',
         },
         {
@@ -205,7 +205,7 @@ export class SkillsService {
           name: 'TypeScript',
           description:
             'Умею типизировать переменные, функции, объекты, использовать литеральные типы, кастовать типы. Знаю разницу между type и interface. Знаю некоторые утилитарные типы (Partial, Required, Readonly, Pick, Omit, ReturnType).',
-          imgSrc: '/skills/typescript-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/typescript-logo.svg',
           url: 'https://www.typescriptlang.org/',
         },
         {
@@ -213,7 +213,7 @@ export class SkillsService {
           name: 'Angular',
           description:
             'Умею создавать компоненты, сервисы, модули. Знаю как работает маршрутизация (роутинг). Умею получать данные с сервера при помощи HttpClient.',
-          imgSrc: '/skills/angular-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/angular-logo.svg',
           url: 'https://angular.dev/',
         },
       ],
@@ -226,14 +226,14 @@ export class SkillsService {
           id: 'arduino',
           name: 'Arduino',
           description: 'Arduino Nano, Arduino Uno',
-          imgSrc: '/skills/arduino-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/arduino-logo.svg',
           url: 'https://www.arduino.cc/',
         },
         {
           id: 'esp',
           name: 'ESP',
           description: 'ESP 32, ESP 8266',
-          imgSrc: '/skills/esp-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/esp-logo.svg',
           url: 'https://www.espressif.com/en/',
         },
       ],
@@ -247,7 +247,7 @@ export class SkillsService {
           name: 'C',
           description:
             'Знаю базовый синтаксис (переменные, условия, циклы, функции), типы данных, массивы, указатели, ссылки, структуры (struct), перечисления (enum), объединения (unions), битовые поля. Умею работать с аллокатором памяти.',
-          imgSrc: '/skills/c-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/c-logo.svg',
           url: 'https://www.c-language.org/',
         },
         {
@@ -255,7 +255,7 @@ export class SkillsService {
           name: 'C++',
           description:
             'Знаю базовый синтаксис (переменные, условия, циклы, функции), типы данных, структуры (struct), перечисления (enum), объединения (unions), битовые поля, ООП (с шаблонами). Частично знаю STL (стандартную библиотеку шаблонов). Умею работать с аллокатором памяти.\n\nЕсли ссылка в логотипе не работает (сайт может блокировать определённые подключения) и необходимости в использовании официального сайта нет, можете посмотреть сторонние ресурсы о С++.',
-          imgSrc: '/skills/cpp-logo.svg',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/cpp-logo.svg',
           url: 'https://isocpp.org/',
         },
       ],
