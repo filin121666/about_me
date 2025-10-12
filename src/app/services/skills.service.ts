@@ -216,6 +216,13 @@ export class SkillsService {
           imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/angular-logo.svg',
           url: 'https://angular.dev/',
         },
+        {
+          id: 'rxjs',
+          name: 'RxJS',
+          description: 'Знаю что такое Observable, Subject и его виды. Умею создавать и подписываться на Observable, умею вносить изменения и фильтровать поток.',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/rxjs-logo.svg',
+          url: 'https://rxjs.dev/',
+        },
       ],
     },
     {
