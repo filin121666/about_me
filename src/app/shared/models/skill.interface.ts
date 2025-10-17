@@ -3,6 +3,7 @@ export interface Skill {
   name: string;
   description?: string;
   imgSrc?: string;
+  darkModeImgSrc?: string;
   url: string;
   darkModeBackground?: boolean;
 }

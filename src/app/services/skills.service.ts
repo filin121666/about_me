@@ -17,10 +17,11 @@ export class SkillsService {
           url: 'https://code.visualstudio.com/',
         },
         {
-          id: 'cursor_ide',
-          name: 'Cursor IDE',
-          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/cursor-ide-logo.svg',
-          url: 'https://cursor.com/features',
+          id: 'github_copilot',
+          name: 'GitHub Copilot',
+          imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/github-copilot/github-copilot-logo.svg',
+          darkModeImgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/github-copilot/github-copilot-dark-logo.svg',
+          url: 'https://github.com/features/copilot',
         },
         {
           id: 'platformio',
@@ -36,7 +37,7 @@ export class SkillsService {
         },
         {
           id: 'github',
-          name: 'Github',
+          name: 'GitHub',
           imgSrc: 'https://cdn.jsdelivr.net/gh/filin121666/about_me@gh-pages/skills/github-logo.svg',
           url: 'https://github.com/',
         },

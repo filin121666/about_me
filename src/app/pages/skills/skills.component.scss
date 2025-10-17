@@ -1,0 +1,19 @@
+@use "../../_mixins.scss" as *;
+@use "../../shared/_variables" as v;
+
+.skills-page {
+    @include page;
+
+    &-body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        @media screen and (max-width: v.$media-small-screen) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media screen and (max-width: v.$media-very-small-screen) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

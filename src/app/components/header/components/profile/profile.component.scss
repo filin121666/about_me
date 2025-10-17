@@ -1,0 +1,33 @@
+@use "../../../../shared/_variables" as v;
+
+.profile {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    margin: 1vh 0 1vh 5vw;
+    background-color: var(--background-color);
+    border-radius: calc((var(--header-height) - 2vh) / 2);
+    text-decoration: none;
+    color: var(--text-primary);
+
+    @media screen and (max-height: v.$media-very-small-screen) {
+        background-color: none;
+    }
+    &-icon {
+        width: calc(var(--header-height) - 2vh);
+        height: calc(var(--header-height) - 2vh);
+        border-radius: 50%;
+    }
+    &-name {
+        font-size: medium;
+        margin: 0 1vw;
+        @media screen {
+            @media (max-width: v.$media-small-screen) {
+                margin: 0 1.5vw;
+            }
+            @media (max-width: v.$media-very-small-screen) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
-import { effect, Injectable, signal } from '@angular/core';
+import { computed, effect, Injectable, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class ColorThemeService {
   private darkThemeSignal = signal<boolean>(false);
+  isDarkMode = computed(() => this.darkThemeSignal());
 
   constructor() {
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -15,10 +16,6 @@ export class ColorThemeService {
     effect(() => {
       this.applyTheme(this.darkThemeSignal());
     });
-  }
-
-  get isDarkMode(): boolean {
-    return this.darkThemeSignal();
   }
 
   toggleTheme(): void {
