@@ -32,7 +32,8 @@
             ],
             "styles": [
               "src/styles.scss"
-            ]
+            ],
+            "baseHref": "/about_me/"
           },
           "configurations": {
             "production": {
