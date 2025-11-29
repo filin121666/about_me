@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { FormsModule } from '@angular/forms';
 import { PageTitleComponent } from '../../components/page-title/page-title.component';
 import { ProjectComponent } from './components/project/project.component';
@@ -11,11 +11,10 @@ import { PageTitleService } from '../../services/page-title.service';
   selector: 'app-projects',
   standalone: true,
   imports: [
-    CommonModule,
     FormsModule,
     PageTitleComponent,
     ProjectComponent
-  ],
+],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

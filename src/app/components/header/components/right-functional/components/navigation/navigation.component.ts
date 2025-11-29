@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { NavLinkComponent } from './nav-link/nav-link.component';
 
 @Component({
     standalone: true,
-    imports: [CommonModule, NavLinkComponent],
+    imports: [NavLinkComponent],
     selector: 'app-header-navigation',
     templateUrl: 'navigation.component.html',
     styleUrl: 'navigation.component.scss',
